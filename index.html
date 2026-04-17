@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Help Sankalp get back to his life — a fundraiser for his cancer treatment. Donate via UPI; 100% goes to his family." />
+    <title>Help Sankalp — Family fundraiser</title>
+    <meta property="og:title" content="Help Sankalp — Family fundraiser" />
+    <meta property="og:description" content="Help Sankalp get back to his life. Donate via UPI; updates posted here for everyone who cares." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://REPLACE-WITH-YOUR-SITE-URL" />
+    <meta property="og:image" content="https://REPLACE-WITH-YOUR-SITE-URL/images/hero-placeholder.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip-link">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <p class="site-header__eyebrow" data-i18n="header-eyebrow">For everyone who has asked how to help</p>
+      <div class="lang-toggle" role="group" aria-label="Language / भाषा">
+        <button type="button" class="lang-toggle__btn is-active" data-lang-btn="en" aria-pressed="true">EN</button>
+        <button type="button" class="lang-toggle__btn" data-lang-btn="hi" aria-pressed="false">हिं</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 1. Hero -->
+      <section class="hero" id="hero" aria-labelledby="hero-heading">
+        <div class="hero__inner">
+          <div class="hero__copy">
+            <h1 id="hero-heading" data-i18n="hero-h1">Help Sankalp get back to his life</h1>
+            <p class="hero__lede" data-i18n="hero-lede">
+              Sankalp is 17. He is undergoing cancer treatment. We are his family, and we are asking for your support so he can focus on getting well — not on whether we can afford the next cycle of care.
+            </p>
+            <div class="hero__actions">
+              <button type="button" class="btn btn--primary" id="btn-donate-hero" aria-expanded="false" aria-controls="donation-panel" data-i18n="btn-donate">
+                Donate via UPI
+              </button>
+            </div>
+          </div>
+          <figure class="hero__photo">
+            <img
+              src="images/hero-placeholder.svg"
+              width="640"
+              height="480"
+              alt="Sankalp — replace with a photo from when he was healthy"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+        </div>
+        <div class="donation-panel" id="donation-panel" hidden>
+          <p class="donation-panel__label" data-i18n="donation-panel-label">UPI ID — tap to copy</p>
+          <div class="donation-panel__row">
+            <code class="upi-id" id="upi-id" translate="no">your.upi@bank</code>
+            <button type="button" class="btn btn--small" data-copy-target="#upi-id" data-copy-feedback="upi-copy-feedback" data-i18n="copy-btn">Copy</button>
+          </div>
+          <p class="copy-feedback" id="upi-copy-feedback" role="status" aria-live="polite"></p>
+          <figure class="donation-panel__qr">
+            <img src="images/upi-qr.png" width="280" height="280" alt="UPI QR code — replace this image with your generated QR" loading="lazy" decoding="async" />
+            <figcaption class="donation-panel__qr-note" data-i18n="qr-note">Scan with any UPI app</figcaption>
+          </figure>
+          <p class="donation-panel__trust" data-i18n="donation-trust">100% of your donation goes directly to <strong>[Mother's name]</strong>. No platform fees.</p>
+        </div>
+      </section>
+
+      <!-- 2. His Story -->
+      <section class="section section--story" id="story" aria-labelledby="story-heading">
+        <div class="section__inner">
+          <h2 id="story-heading" data-i18n="story-heading">His story</h2>
+          <div class="prose">
+            <p data-i18n="story-p1">
+              Before all of this, Sankalp was a regular teenager — school, friends, plans for the future. He laughed easily. He showed up for people. That is the boy we still see, even on the hard days.
+            </p>
+            <p data-i18n="story-p2">
+              When we learned how serious his illness was, our world narrowed to hospitals, tests, and waiting rooms. The words do not matter as much as this: he needs ongoing treatment, and it costs more than any family should have to carry alone.
+            </p>
+            <p data-i18n="story-p3">
+              Today we are taking it one step at a time — treatment schedules, good days and rough days, and the hope that with the right support he can get back to the life that was interrupted.
+            </p>
+            <p data-i18n="story-p4">
+              If you are here, thank you. Whether you can give a little or a lot, share this page, or simply hold us in your thoughts — it means more than we can say.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. Photo Timeline -->
+      <section class="section section--timeline" id="timeline" aria-labelledby="timeline-heading">
+        <div class="section__inner section__inner--wide">
+          <h2 id="timeline-heading" data-i18n="timeline-heading">Moments along the way</h2>
+          <p class="section__intro" data-i18n="timeline-intro">A few photos with simple captions — the human arc, not a polished campaign.</p>
+          <div class="timeline-strip" role="list">
+            <figure class="timeline-card" role="listitem">
+              <img src="images/timeline-1.svg" width="320" height="240" alt="" loading="lazy" decoding="async" />
+              <figcaption data-i18n="timeline-cap-1">Before surgery — school and friends</figcaption>
+            </figure>
+            <figure class="timeline-card" role="listitem">
+              <img src="images/timeline-2.svg" width="320" height="240" alt="" loading="lazy" decoding="async" />
+              <figcaption data-i18n="timeline-cap-2">At home with family</figcaption>
+            </figure>
+            <figure class="timeline-card" role="listitem">
+              <img src="images/timeline-3.svg" width="320" height="240" alt="" loading="lazy" decoding="async" />
+              <figcaption data-i18n="timeline-cap-3">During treatment — we are still here</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. What the Money Goes To -->
+      <section class="section section--costs" id="costs" aria-labelledby="costs-heading">
+        <div class="section__inner">
+          <h2 id="costs-heading" data-i18n="costs-heading">What the money goes toward</h2>
+          <p class="section__intro" data-i18n="costs-intro">Honest numbers help you trust us. We will update amounts as we know more.</p>
+          <ul class="cost-list">
+            <li class="cost-list__item">
+              <span class="cost-list__label" data-i18n="cost-1">Chemotherapy cycles</span>
+              <span class="cost-list__amount">₹ —</span>
+            </li>
+            <li class="cost-list__item">
+              <span class="cost-list__label" data-i18n="cost-2">Hospital stays and procedures</span>
+              <span class="cost-list__amount">₹ —</span>
+            </li>
+            <li class="cost-list__item">
+              <span class="cost-list__label" data-i18n="cost-3">Travel to and from the hospital</span>
+              <span class="cost-list__amount">₹ —</span>
+            </li>
+            <li class="cost-list__item">
+              <span class="cost-list__label" data-i18n="cost-4">Daily care at home</span>
+              <span class="cost-list__amount">₹ —</span>
+            </li>
+            <li class="cost-list__item">
+              <span class="cost-list__label" data-i18n="cost-5">Medication and follow-up</span>
+              <span class="cost-list__amount">₹ —</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 5. How to Donate -->
+      <section class="section section--donate" id="donate" aria-labelledby="donate-heading">
+        <div class="section__inner">
+          <h2 id="donate-heading" data-i18n="donate-heading">How to donate</h2>
+          <p class="section__intro" data-i18n="donate-intro">Use any UPI app (PhonePe, Google Pay, Paytm, BHIM, your bank app). Your money goes straight to his mother's account.</p>
+
+          <div class="donate-card">
+            <p class="donate-card__label" data-i18n="upi-label">UPI ID</p>
+            <div class="donate-card__row">
+              <code class="upi-id upi-id--large" id="upi-id-main" translate="no">your.upi@bank</code>
+              <button type="button" class="btn" data-copy-target="#upi-id-main" data-copy-feedback="upi-main-copy-feedback" data-i18n="copy-upi-btn">Copy UPI ID</button>
+            </div>
+            <p class="copy-feedback" id="upi-main-copy-feedback" role="status" aria-live="polite"></p>
+
+            <div class="donate-card__qr">
+              <img src="images/upi-qr.png" width="280" height="280" alt="UPI QR code — replace with your generated QR" loading="lazy" decoding="async" />
+            </div>
+            <p class="donate-card__trust" data-i18n="donate-trust">100% of your donation goes directly to <strong>[Mother's name]</strong>. No platform fees.</p>
+          </div>
+
+          <div class="share-row">
+            <a class="btn btn--secondary" id="whatsapp-share" href="#" rel="noopener noreferrer" data-i18n="whatsapp-btn">Share on WhatsApp</a>
+            <button type="button" class="btn btn--ghost" id="copy-link" data-copy-feedback="link-copy-feedback" data-i18n="copy-link-btn">Copy page link</button>
+          </div>
+          <p class="copy-feedback" id="link-copy-feedback" role="status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <!-- 6. Updates -->
+      <section class="section section--updates" id="updates" aria-labelledby="updates-heading">
+        <div class="section__inner">
+          <h2 id="updates-heading" data-i18n="updates-heading">Updates</h2>
+          <p class="section__intro" data-i18n="updates-intro">Newest first. We will add a short note here when something changes.</p>
+          <ol class="updates-list">
+            <li class="updates-list__item">
+              <time class="updates-list__date" datetime="2026-04-17" data-i18n="update-1-date">17 April 2026</time>
+              <p class="updates-list__title" data-i18n="update-1-title">We've launched — help us help Sankalp</p>
+              <p class="updates-list__text" data-i18n="update-1-text">
+                This page is live. Sankalp is under care; we will post short updates here so everyone who is rooting for him can hear directly from us. Thank you for being here.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 7. The family behind this -->
+      <section class="section section--family" id="family" aria-labelledby="family-heading">
+        <div class="section__inner section__inner--wide">
+          <h2 id="family-heading" data-i18n="family-heading">The family behind this</h2>
+          <p class="section__intro" data-i18n="family-intro">Real people, with names and faces, standing behind every word on this page.</p>
+          <ul class="family-grid">
+
+            <li class="family-card">
+              <img class="family-card__avatar" src="images/family-1.svg" width="96" height="96" alt="[Mother's name]" loading="lazy" decoding="async" />
+              <div class="family-card__body">
+                <p class="family-card__name">[Mother's name]</p>
+                <p class="family-card__relation" data-i18n="family-1-relation">His mother</p>
+                <p class="family-card__note" data-i18n="family-1-note">Managing all of Sankalp's day-to-day care and treatment. The heart of everything on this page.</p>
+                <!-- Replace href with actual LinkedIn profile URL -->
+                <a class="family-card__linkedin" href="https://linkedin.com/in/REPLACE" target="_blank" rel="noopener noreferrer" aria-label="[Mother's name] on LinkedIn">
+                  <svg class="family-card__linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.025-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.12v1.561h.044c.435-.824 1.496-1.693 3.08-1.693 3.293 0 3.902 2.167 3.902 4.984v6.6zM5.337 7.433a1.814 1.814 0 1 1 0-3.628 1.814 1.814 0 0 1 0 3.628zm1.561 13.019H3.775V9h3.123v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </li>
+
+            <li class="family-card">
+              <img class="family-card__avatar" src="images/family-2.svg" width="96" height="96" alt="[Brother's name]" loading="lazy" decoding="async" />
+              <div class="family-card__body">
+                <p class="family-card__name">[Brother's name]</p>
+                <p class="family-card__relation" data-i18n="family-2-relation">His brother</p>
+                <p class="family-card__note" data-i18n="family-2-note">Coordinating this fundraiser and staying close to Sankalp through every step of treatment.</p>
+                <!-- Replace href with actual LinkedIn profile URL -->
+                <a class="family-card__linkedin" href="https://linkedin.com/in/REPLACE" target="_blank" rel="noopener noreferrer" aria-label="[Brother's name] on LinkedIn">
+                  <svg class="family-card__linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.025-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.12v1.561h.044c.435-.824 1.496-1.693 3.08-1.693 3.293 0 3.902 2.167 3.902 4.984v6.6zM5.337 7.433a1.814 1.814 0 1 1 0-3.628 1.814 1.814 0 0 1 0 3.628zm1.561 13.019H3.775V9h3.123v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </li>
+
+            <li class="family-card">
+              <img class="family-card__avatar" src="images/family-3.svg" width="96" height="96" alt="[Your name]" loading="lazy" decoding="async" />
+              <div class="family-card__body">
+                <p class="family-card__name">[Your name]</p>
+                <p class="family-card__relation" data-i18n="family-3-relation">Family — built this page</p>
+                <p class="family-card__note" data-i18n="family-3-note">Put this page together so Sankalp's story could reach the people who know and love him.</p>
+                <!-- Replace href with actual LinkedIn profile URL -->
+                <a class="family-card__linkedin" href="https://linkedin.com/in/REPLACE" target="_blank" rel="noopener noreferrer" aria-label="[Your name] on LinkedIn">
+                  <svg class="family-card__linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.025-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.12v1.561h.044c.435-.824 1.496-1.693 3.08-1.693 3.293 0 3.902 2.167 3.902 4.984v6.6zM5.337 7.433a1.814 1.814 0 1 1 0-3.628 1.814 1.814 0 0 1 0 3.628zm1.561 13.019H3.775V9h3.123v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </li>
+
+            <li class="family-card">
+              <img class="family-card__avatar" src="images/family-4.svg" width="96" height="96" alt="[Family member name]" loading="lazy" decoding="async" />
+              <div class="family-card__body">
+                <p class="family-card__name">[Family member name]</p>
+                <p class="family-card__relation" data-i18n="family-4-relation">Family</p>
+                <p class="family-card__note" data-i18n="family-4-note">Supporting the family through treatment, travel, and the long months ahead.</p>
+                <!-- Replace href with actual LinkedIn profile URL, or remove the <a> block below if not applicable -->
+                <a class="family-card__linkedin" href="https://linkedin.com/in/REPLACE" target="_blank" rel="noopener noreferrer" aria-label="[Family member name] on LinkedIn">
+                  <svg class="family-card__linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.025-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.12v1.561h.044c.435-.824 1.496-1.693 3.08-1.693 3.293 0 3.902 2.167 3.902 4.984v6.6zM5.337 7.433a1.814 1.814 0 1 1 0-3.628 1.814 1.814 0 0 1 0 3.628zm1.561 13.019H3.775V9h3.123v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </li>
+
+            <li class="family-card">
+              <img class="family-card__avatar" src="images/family-5.svg" width="96" height="96" alt="[Family member name]" loading="lazy" decoding="async" />
+              <div class="family-card__body">
+                <p class="family-card__name">[Family member name]</p>
+                <p class="family-card__relation" data-i18n="family-5-relation">Family</p>
+                <p class="family-card__note" data-i18n="family-5-note">Here for Sankalp and the whole family through every stage of his recovery.</p>
+                <!-- Replace href with actual LinkedIn profile URL, or remove the <a> block below if not applicable -->
+                <a class="family-card__linkedin" href="https://linkedin.com/in/REPLACE" target="_blank" rel="noopener noreferrer" aria-label="[Family member name] on LinkedIn">
+                  <svg class="family-card__linkedin-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452H17.21v-5.569c0-1.328-.025-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.985V9h3.12v1.561h.044c.435-.824 1.496-1.693 3.08-1.693 3.293 0 3.902 2.167 3.902 4.984v6.6zM5.337 7.433a1.814 1.814 0 1 1 0-3.628 1.814 1.814 0 0 1 0 3.628zm1.561 13.019H3.775V9h3.123v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <!-- 8. FAQ -->
+      <section class="section section--faq" id="faq" aria-labelledby="faq-heading">
+        <div class="section__inner">
+          <h2 id="faq-heading" data-i18n="faq-heading">Questions you might have</h2>
+          <div class="faq" id="faq-accordion">
+            <div class="faq__item">
+              <h3 class="faq__question">
+                <button type="button" class="faq__trigger" id="faq-btn-1" aria-expanded="false" aria-controls="faq-panel-1" data-i18n="faq-q-1">
+                  How do I know my money reaches Sankalp?
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" hidden>
+                <p data-i18n="faq-a-1">Donations go by UPI directly to <strong>[Mother's name]</strong> — the same account his care is paid from. There is no platform or middleman taking a cut.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <h3 class="faq__question">
+                <button type="button" class="faq__trigger" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2" data-i18n="faq-q-2">
+                  Can I donate a small amount?
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" hidden>
+                <p data-i18n="faq-a-2">Yes. Every rupee matters. There is no minimum. If many people give what they can, it adds up.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <h3 class="faq__question">
+                <button type="button" class="faq__trigger" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3" data-i18n="faq-q-3">
+                  What is the money specifically used for?
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" hidden>
+                <p data-i18n="faq-a-3">Funds go toward treatment and everything that surrounds it — hospital care, chemo cycles, travel, medication, and daily support at home. See the <a href="#costs">breakdown above</a> for how we think about costs.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <h3 class="faq__question">
+                <button type="button" class="faq__trigger" id="faq-btn-4" aria-expanded="false" aria-controls="faq-panel-4" data-i18n="faq-q-4">
+                  Will I get an update on how he is doing?
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" hidden>
+                <p data-i18n="faq-a-4">We will keep the <a href="#updates">Updates</a> section on this page whenever there is news we can share. Thank you for caring enough to ask.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <h3 class="faq__question">
+                <button type="button" class="faq__trigger" id="faq-btn-5" aria-expanded="false" aria-controls="faq-panel-5" data-i18n="faq-q-5">
+                  Can I visit or send something?
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" hidden>
+                <p data-i18n="faq-a-5">We are grateful. Right now we are juggling treatment schedules and rest. Please message us first using the contact in the footer so we can suggest what helps without overwhelming him or the home.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <h3 class="faq__question">
+                <button type="button" class="faq__trigger" id="faq-btn-6" aria-expanded="false" aria-controls="faq-panel-6" data-i18n="faq-q-6">
+                  What if the goal is exceeded?
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-6" role="region" aria-labelledby="faq-btn-6" hidden>
+                <p data-i18n="faq-a-6">If we reach the amount we had planned for, we will say so clearly on this website and explain what comes next — whether that is further treatment, follow-up care, or supporting his recovery.</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <h3 class="faq__question">
+                <button type="button" class="faq__trigger" id="faq-btn-7" aria-expanded="false" aria-controls="faq-panel-7" data-i18n="faq-q-7">
+                  Is this tax deductible?
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-7" role="region" aria-labelledby="faq-btn-7" hidden>
+                <p data-i18n="faq-a-7">Probably not. This is a direct UPI transfer to an individual for medical care, not a registered charity receipt. If you need documentation for your own records, contact us and we will help where we can.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="footer">
+      <div class="site-footer__inner">
+        <p class="site-footer__contact" data-i18n="footer-contact">
+          Questions about this page or verifying details: <a href="mailto:family@example.com">family@example.com</a> — replace with a working family email or phone.
+        </p>
+        <p class="site-footer__back"><a href="#top" data-i18n="footer-back">Back to top</a></p>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>

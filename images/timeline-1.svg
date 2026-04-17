@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Placeholder timeline photo 1">
+  <rect width="320" height="240" fill="#e5dfd7"/>
+  <rect x="60" y="50" width="200" height="120" rx="6" fill="#cfc7bd"/>
+  <circle cx="160" cy="110" r="28" fill="#b8b0a6"/>
+  <text x="160" y="210" text-anchor="middle" fill="#6a635c" font-family="system-ui,sans-serif" font-size="12">Photo 1</text>
+</svg>
