@@ -38,6 +38,19 @@
                 Donate via UPI
               </button>
             </div>
+            <div class="donation-panel" id="donation-panel" hidden>
+              <p class="donation-panel__label" data-i18n="donation-panel-label">UPI ID — tap to copy</p>
+              <div class="donation-panel__row">
+                <code class="upi-id" id="upi-id" translate="no">shiprasrivastava1204@oksbi</code>
+                <button type="button" class="btn btn--small" data-copy-target="#upi-id" data-copy-feedback="upi-copy-feedback" data-i18n="copy-btn">Copy</button>
+              </div>
+              <p class="copy-feedback" id="upi-copy-feedback" role="status" aria-live="polite"></p>
+              <figure class="donation-panel__qr">
+                <img src="images/upi-qr.png" width="723" height="603" alt="UPI QR code — replace this image with your generated QR" loading="lazy" decoding="async" />
+                <figcaption class="donation-panel__qr-note" data-i18n="qr-note">Scan with any UPI app</figcaption>
+              </figure>
+              <p class="donation-panel__trust" data-i18n="donation-trust">100% of your donation goes directly to <strong>Shipra Srivastava (Dolly)</strong>. No platform fees.</p>
+            </div>
           </div>
           <figure class="hero__photo">
             <img
@@ -49,20 +62,6 @@
               decoding="async"
             />
           </figure>
-        </div>
-        
-        <div class="donation-panel" id="donation-panel" hidden>
-          <p class="donation-panel__label" data-i18n="donation-panel-label">UPI ID — tap to copy</p>
-          <div class="donation-panel__row">
-            <code class="upi-id" id="upi-id" translate="no">shiprasrivastava1204@oksbi</code>
-            <button type="button" class="btn btn--small" data-copy-target="#upi-id" data-copy-feedback="upi-copy-feedback" data-i18n="copy-btn">Copy</button>
-          </div>
-          <p class="copy-feedback" id="upi-copy-feedback" role="status" aria-live="polite"></p>
-          <figure class="donation-panel__qr">
-            <img src="images/upi-qr.png" width="723" height="603" alt="UPI QR code — replace this image with your generated QR" loading="lazy" decoding="async" />
-            <figcaption class="donation-panel__qr-note" data-i18n="qr-note">Scan with any UPI app</figcaption>
-          </figure>
-          <p class="donation-panel__trust" data-i18n="donation-trust">100% of your donation goes directly to <strong>Shipra Srivastava (Dolly)</strong>. No platform fees.</p>
         </div>
       </section>
 
