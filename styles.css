@@ -227,6 +227,7 @@ main {
   height: auto;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  object-position: center top;
 }
 
 /* Donation panel (under hero) */
