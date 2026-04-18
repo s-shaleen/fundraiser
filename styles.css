@@ -332,7 +332,8 @@ main {
   box-shadow: 0 2px 12px rgba(44, 40, 37, 0.06);
 }
 
-.timeline-card img {
+.timeline-card img,
+.timeline-card video {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;
